@@ -1,0 +1,22 @@
+NordVPN - Ubuntu 21 version
+
+Follow NordVPN linux app download first instruction - 1.)
+"Downloading the VPN app 
+
+1. Download the NordVPN Linux client by opening the terminal, writing the command below, and following any on-screen instructions:
+
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+
+Note: If you do not have a curl package, evidenced by the fact that the above does not work, you can alternatively use this command:
+sh <(wget -qO - https://downloads.nordcdn.com/apps/linux/install.sh)
+
+Additionally, if you receive the following issue: Whoops! Permission denied accessing /run/nordvpn/nordvpnd.sock, all you need to do is write the following command: sudo usermod -aG nordvpn $USER and then reboot your device."
+
+#src: https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Raspberry-Pi-Elementary-OS-and-Linux-Mint.htm
+
+nordvpn_boot.sh file creation.
+#src: https://www.reddit.com/r/nordvpn/comments/povx2x/nordvpn_connection_issues_with_ubuntu_2104_solved/
+
+The gist is: you can use nordvpn login --legacy​ in order to avoid the browser.
+Be Warned! Before using nordvpn login --legacy remove MFA from your NordVPN account.
+#src: https://askubuntu.com/questions/1384955/cannot-log-into-nord-vpn
